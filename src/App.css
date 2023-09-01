@@ -1,0 +1,75 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Estilos para o menu */
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para o ícone de menu no modo responsivo */
+.menu-icon {
+  cursor: pointer;
+  display: none; /* Esconde o ícone no desktop */
+}
+
+/* Estilos para dispositivos móveis (até 768px de largura) */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none; /* Esconde a lista no modo responsivo */
+  }
+
+  .menu-icon {
+    display: block; /* Exibe o ícone no modo responsivo */
+  }
+
+  .menu-toggle {
+    display: none; /* Esconde a checkbox no modo responsivo */
+  }
+
+  .menu-toggle:checked + .menu ul {
+    display: flex; /* Exibe a lista quando a checkbox está marcada */
+    flex-direction: column;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+  }
+}

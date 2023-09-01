@@ -1,0 +1,16 @@
+/* src/components/Clientes.css */
+.clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Aqui, usamos 3 colunas com largura igual */
+    gap: 20px; /* Espaçamento entre os elementos do grid */
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno da lista */
+  }
+  
+  .cliente-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
